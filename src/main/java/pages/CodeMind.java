@@ -1,12 +1,9 @@
 package pages;
 
-import com.beust.ah.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 
-import java.util.PrimitiveIterator;
 
 public class CodeMind extends basePage{
 
@@ -26,7 +23,7 @@ public class CodeMind extends basePage{
 
     private By portfolio = new By.ByPartialLinkText("Portfolio");
 
-    private By aptlogic = By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/nav/div[2]/ul/li[1]/ul/li/a");
+    //private By aptlogic = By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/nav/div[2]/ul/li[1]/ul/li/a");
 
     private By apttest = new By.ByClassName("count-name");
 
@@ -40,7 +37,7 @@ public class CodeMind extends basePage{
 
     private By bubblesort = new By.ByPartialLinkText("Bubble sort");
 
-    private By play = By.xpath("//*[@id=\"player\"]/div[7]/div[6]/div[1]/button");
+    //private By play = By.xpath("//*[@id=\"player\"]/div[7]/div[6]/div[1]/button");
 
     //private By keyword = By.xpath("//*[@id=\"page-wrap\"]/main/div/div[2]/div[2]/section/div[1]/div/div/div/div[1]/div/h2/div/div/p/strong/span");
 
