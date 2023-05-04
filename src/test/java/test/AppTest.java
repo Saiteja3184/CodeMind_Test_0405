@@ -54,6 +54,6 @@ public class AppTest {
     @AfterTest
     public void close() throws InterruptedException{
         Thread.sleep(Long.parseLong("1000"));
-        driver.close();
+        codemind.close();
     }
 }

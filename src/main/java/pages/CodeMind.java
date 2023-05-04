@@ -464,7 +464,7 @@ public class CodeMind extends basePage{
         driver.findElement(rpa3_2).click();
         Thread.sleep(Long.parseLong("500"));
         driver.findElement(rpa4).click();
-        Thread.sleep(Long.parseLong("500"));
+        Thread.sleep(Long.parseLong("1000"));
     }
 
     public void technical_Explorer() throws InterruptedException {
@@ -509,6 +509,9 @@ public class CodeMind extends basePage{
         driver.findElement(proceedbutton).click();
     }
 
+    public void close() {
+        driver.close();
+    }
     /*public void Code_OnlineCompiler() throws InterruptedException{
         driver.findElement(code).click();
         driver.findElement(editor).sendKeys("Hello");
