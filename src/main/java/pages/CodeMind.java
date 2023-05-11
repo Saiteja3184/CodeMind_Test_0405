@@ -477,8 +477,11 @@ public class CodeMind extends basePage{
     public void technical_Experimenter() throws InterruptedException {
         driver.findElement(technical).click();
         driver.get("https://thecodemind.io/app/course.php?pageCategory=MGdneU9vUGFjZHEyUXV1RXRQQTY5bnBCcG9nT0xQNWs4NkRKVmNZaTViMD0=");
+
         driver.findElement(networking).click();
         driver.findElement(what_is_the_Network).click();
+        Thread.sleep(Long.parseLong("2000"));
+
         driver.findElement(test).click();
         driver.findElement(ques1).click();
         driver.findElement(nextques).click();
