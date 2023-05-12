@@ -14,17 +14,16 @@ public class AppTest {
 
     @BeforeTest
     public void driverSetup() {
-        System.setProperty("Webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions o= new ChromeOptions();
         o.addArguments("--remote-allow-origins=*");
+        WebDriver driver = new ChromeDriver(o);
+        driver.manage().window().maximize();
+        codemind = new CodeMind(driver);
 
         /*o.addArguments("--incognito");
         DesiredCapabilities c = DesiredCapabilities.chrome();
         c.setCapability(ChromeOptions.CAPABILITY, o);*/
-
-        WebDriver driver = new ChromeDriver(o);
-        driver.manage().window().maximize();
-        codemind = new CodeMind(driver);
 
         /*driver = new ChromeDriver();
         driver.manage().window().maximize();
