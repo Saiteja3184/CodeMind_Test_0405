@@ -14,7 +14,7 @@ public class AppTest {
 
     @BeforeTest
     public void driverSetup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\T-HUB\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("Webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
         ChromeOptions o= new ChromeOptions();
         o.addArguments("--remote-allow-origins=*");
 
